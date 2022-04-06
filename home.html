@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,400;1,700&family=Zen+Antique&display=swap');
+   *{
+      margin:0;
+	  padding:0;
+   }
+   .logo{
+     width:20%;
+	 display:flex;
+	 justify-content:center;
+	 align-items:center;
+   }
+   .logo img{
+     width:33%;
+	 border:3px solid white;
+	 border=radius:50px;
+   }
+   .navbar{
+      align-items:center;
+      justify-content:center;
+      position:sticky;
+      top:0;
+      cursor:pointer;
+      display:flex;
+   }
+   .nav-list{
+      width:50%;
+	  display:flex;
+	  justify-content:center;
+	  align-items:center;
+	  background-color:black;
+   }
+   .nav-list li{
+     list-style:none;
+	 padding:26px 30px;
+	 
+   }
+   .nav-list li a{
+     text-decoration:none;
+	 color:white;
+   }
+   .nav-list li a:hover{
+     text-decoration:none;
+	 color:grey;
+	}
+   .rightnav{
+       padding:0 18px
+       background-color:black;
+	   width:50%;
+	   text-align:right;
+   }
+   #search{
+      padding:6px;
+	  font-size:17;
+	  border:2px solid grey;
+	  border-radius:9px;
+	  color:white;
+   }
+   .background{
+      background:rgba(0,0,0,0.8) url('homepage picture.jpg');
+	  background-size:cover;
+	  background-blend-mode:darken;
+   }
+   .firstSection{
+      height: 100vh;
+   }
+   .box-main{
+     display:flex;
+	 justify-content:center;
+	  align-items:center;
+	  color:white;
+	  max-width:50%;
+	  margin:auto;
+	  height:75%;
+   }
+   .firsthalf{
+      width:75%;
+	  justify-content:center;
+	  flex-direction:column;
+	  display:flex;
+	  font-family: 'Ubuntu', sans-serif;
+   }
+   .secondhalf img{
+      width:70%;
+	  padding:4px 0;
+	  border:4px solid white;
+	  border-radius:150px;
+	  display:block;
+	  margin:auto;
+	  
+   }
+   .text-big{
+      font-size:40px;
+   }
+   .text-small{
+      font-size:25px;
+   }
+   .btn{
+      padding:8px;
+	  margin:7px 3px;
+	  border:2px solid white;
+	  border-radius:8px;
+	  font-size:15px;
+	  background:none;
+	  color:white;
+	  cursor:pointer;
+   }
+   .btn-sm{
+      padding:6px 10px;
+	  vertical-align:middle;
+   }
+   .secRight{
+	  display:flex;
+	  align-items:center;
+	  justify-content:space-evenly;
+	  max-width:80%;
+	  margin:auto;
+	  font-family: 'Zen Antique', serif;
+   }
+   .secLeft{
+	  display:flex;
+	  flex-direction:row-reverse;
+	  align-items:center;
+	  justify-content:space evenly;
+	  max-width:80%;
+	  margin:auto;
+	  font-family: 'Ubuntu', sans-serif;
+   }
+   .paras{
+      padding:0px 70px;
+   }
+	.fa{
+	padding:20px;
+	font-size:30px;
+	width:30px;
+	text-align:center;
+	margin:5px 2px;
+	border-radius:50%;
+	text-decoration:none;
+	}
+	.fa:hover{
+	   opacity:0.8;
+	}
+	.fa-facebook{
+		background-color:blue;
+		color:white;
+	}
+	.fa-twitter{
+		background-color:#1DA1F2;
+		color:white;
+	}
+	.fa-instagram{
+		background:radial-gradient(circle at 33% 100%, #fed373 4%, #f15243 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+		color:white;
+	}
+	.fa-youtube{
+		background-color:red;
+		color:white;
+    }
+   .copyright{
+      text-align:center;
+	  padding-top:40px;
+	  font-family: 'Ubuntu', sans-serif;
+	  dusplay:flex;
+	  background-color:grey;
+   }
+ </style>
+    <meta charset="UTF-8">
+	<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+	<title>Food Palace</title>
+</head>
+<body>
+   <nav class="navbar background">
+       <ol class="nav-list">
+	      <div class="logo">
+		      <img src="pizza.jfif" alt="logo">
+		  </div>
+	      <li> <a href="home.html">Home</a></li>
+		  <li> <a href="about.html">About</a></li>
+		  <li> <a href="services.html">Services</a></li>
+		  <li> <a href="menu.html">Menu</a></li>
+		  <li> <a href="contact us.html">Contact Us</a></li>
+	   </ol>
+	   <div  class="rightnav">
+	       <input type="text" name="search" id="search" onfocus="focusevent()">
+		   <script>
+					function focusevent()
+						{
+							document.getElementById("search").style.background="orange";
+						}
+						
+           </script>
+		   <button class="btn btn-sm">Search</button>
+	   </div>
+	  </nav>
+	  
+	  <section class="background firstSection">
+	     <div class="box-main">
+		    <div class="firsthalf">
+			   <p class="text-big"><b>The future of food restaurant</b></p>
+			   <p class="text-small">We're not getting younger. Today let's fight hunger!</p>
+			   <p class="text-small">please subscribe our restaurant youtube channel and watch videos</p>
+			   <div class="button">
+			      <button class="btn">subscribe</button>
+				  <button class="btn">Watch Videos</button>
+			   </div>
+			</div>
+			<div class="secondhalf">
+			   <img src="pizza.jfif" alt="Laptop Image">
+			</div>
+		 </div><br>
+	  </section>
+	  <section class="secRight">
+	    <div class="paras">
+	      <p class="sectionTag text-big"><b><i>Dining Area</i></b></p>
+		  <p class="sectionSubTag text-small">The Dining Area in our restaurant is most important place for the customer to relax and enjoy the meal with peace and healthy food which is our restaurant main motto. As well our restaurant Dining area design is the best in the world which is especially design for enjoying meal with friends and family. First in our seating facilities we provide the comfrotable seats for every individual person. Also this type of seating is duable and cleanable. we also provide the wait stations for the customers who wait for their friends and family members. 
+		  </p>
+		</div>
+		<div class="thumbnail">
+		     <img src="eating area.jfif" height="300" width="300" alt="laptop image" class="imgFluid">
+		</div>
+	  </section><br><br>
+	  <section class="secLeft">
+	    <div class="paras">
+	      <p class="sectionTag text-big"><b><i>Counter</b></i></p>
+		  <p class="sectionSubTag text-small">our counter also contains small bar and payment place for all the customer. They can enjoy drink in the side of counter after the meal. our counter has the services for couples. Also for solo you can eat out alone and embrace some quality time with yourself in our counter. You can also reserve seat for walk-ins so you can conveniently swing by if you're in the area. Forgot about the people watching,it is all about chef watching. choose the bar tender and enjoy the food and drink as you like.
+		  </p>
+		</div>
+		<div class="thumbnail">
+		     <img src="restaurant counter.jfif" alt="laptop image" class="imgFluid">
+		</div>
+	  </section><br><br>
+	  <section class="secRight">
+	    <div class="paras">
+	      <p class="sectionTag text-big"><b><i>Cooking Area</b></i></p>
+		  <p class="sectionSubTag text-small">Our cooking area consists of kitchen hot line, cold line, dessert line and breakfast line. Breakfast line is in the center, where a large number of hot entrees are prepared. In the right there is for cold line, where cold items are kept and prepared to serve. As you can see the straight forward from the breakfast line there is hot line and dessert line, where all items in hot and dessert menu is cooked and served. In the right of cold line there is another room for cooking area which consists of storage area, preparation area, and receiving area.  
+		  </p>
+		</div>
+		<div class="thumbnail">
+		     <img src="cooking place.jpg" alt="laptop image" class="imgFluid">
+		</div>
+	  </section><br><br>
+	  <section class="secLeft">
+	    <div class="paras">
+	      <p class="sectionTag text-big"><b><i>Washroom</b></i></p>
+		  <p class="sectionSubTag text-small">The main area for restroom is only Washroom which says about your Restaurant. so, our restaurant provides the best washroom for both male female and childrens and for oldage people. Our restaurant restroom is mainly focus on cleanliness for proper hygiene. Also, the modern design which exactly look great for all ages people specially for young age. Also the mirrors and tubs used are of great quality.
+		  </p>
+		</div>
+		<div class="thumbnail">
+		     <img src="washroom place.jpg" alt="laptop image" class="imgFluid">
+		</div>
+	  </section>
+      <footer>
+	  <div class="copyright">
+	     <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+		 <a href="https://twitter.com/i/flow/login"><i class="fa fa-twitter"></i></a>
+		 <a href="https://www.instagram.com/accounts/login/"><i class="fa fa-instagram"></i></a>
+		 <a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+		 </div>
+	     <p class="copyright"><u>Copyright &copy; 2021 food palace All right reserved</u></p>
+		 <p class="copyright">Food Palace 2021 Website created by Bhuwan Giri Supported by BIT</p>
+	  </footer>
+</body>
+</html>

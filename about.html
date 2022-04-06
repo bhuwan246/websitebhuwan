@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,400;1,700&family=Zen+Antique&display=swap');
+      *{
+      margin:0;
+	  padding:0;
+   }
+   .logo{
+     width:20%;
+	 display:flex;
+	 justify-content:center;
+	 align-items:center;
+   }
+   .logo img{
+     width:33%;
+	 border:3px solid white;
+	 border=radius:50px;
+   }
+   .navbar{
+      align-items:center;
+      justify-content:center;
+      position:sticky;
+      top:0;
+      cursor:pointer;
+      display:flex;
+   }
+   .nav-list{
+      width:50%;
+	  display:flex;
+	  justify-content:center;
+	  align-items:center;
+	  background-color:black;
+	 
+   }
+   .nav-list li{
+     list-style:none;
+	 padding:26px 30px;
+	 
+   }
+   .nav-list li a{
+     text-decoration:none;
+	 color:white;
+   }
+   .nav-list li a:hover{
+     text-decoration:none;
+	 color:grey;
+   }
+   .rightnav{
+       padding:0 18px
+       background-color:black;
+	   width:50%;
+	   text-align:right;
+   }
+   #search{
+      padding:6px;
+	  font-size:17;
+	  border:2px solid grey;
+	  border-radius:9px;
+   }
+   .background{
+      background:rgba(0,0,0,0.8) url('homepage picture.jpg');
+	  background-size:cover;
+	  background-blend-mode:darken;
+   }
+   .firstSection{
+      height: 100vh;
+	}
+   .box-main{
+     display:flex;
+	 justify-content:center;
+	  align-items:center;
+	  color:white;
+	  max-width:50%;
+	  margin:auto;
+	  height:75%;
+   }
+   .firsthalf{
+      width:75%;
+	  justify-content:center;
+	  flex-direction:column;
+	  display:flex;
+	  font-family: 'Ubuntu', sans-serif;
+   }
+    .secondhalf iframe{
+      width:70%;
+	  padding:2px 2px;
+	  border:2px solid blue;
+	  display:block;
+	  margin:auto;
+   }
+    .secondhalf video{
+      width:70%;
+	  padding:2px 2px;
+	  border:2px solid blue;
+	  border-radius:180px;
+	  display:block;
+	  margin:auto;
+   }
+   .text-big{
+      font-size:40px;
+   }
+   .text-small{
+      font-size:25px;
+   }
+   .btn{
+      padding:8px;
+	  margin:7px 3px;
+	  border:2px solid white;
+	  border-radius:8px;
+	  font-size:15px;
+	  background:none;
+	  color:white;
+	  cursor:pointer;
+   }
+   .btn-sm{
+      padding:6px 10px;
+	  vertical-align:middle;
+   }
+   .secRight{
+	  display:flex;
+	  align-items:center;
+	  justify-content:space-evenly;
+	  max-width:80%;
+	  margin:auto;
+	  font-family: 'Zen Antique', serif;
+   }
+      .text-big{
+      font-size:40px;
+   }
+   .text-small{
+      font-size:25px;
+	}
+		.fa{
+	padding:20px;
+	font-size:30px;
+	width:30px;
+	text-align:center;
+	margin:5px 2px;
+	border-radius:50%;
+	text-decoration:none;
+	}
+	.fa:hover{
+	   opacity:0.8;
+	}
+	.fa-facebook{
+		background-color:blue;
+		color:white;
+	}
+	.fa-twitter{
+		background-color:#1DA1F2;
+		color:white;
+	}
+	.fa-instagram{
+		background:radial-gradient(circle at 33% 100%, #fed373 4%, #f15243 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+		color:white;
+	}
+	.fa-youtube{
+		background-color:red;
+		color:white;
+    }
+      .copyright{
+      text-align:center;
+	  padding-top:40px;
+	  font-family: 'Ubuntu', sans-serif;
+	  dusplay:flex;
+	  background-color:grey;
+   }
+</style>
+</head>
+<body>
+ <nav class="navbar background">
+       <ol class="nav-list">
+	      <div class="logo">
+		      <img src="pizza.jfif" alt="logo">
+		  </div>
+	      <li> <a href="home.html">Home</a></li>
+		  <li> <a href="about.html">About</a></li>
+		  <li> <a href="services.html">Services</a></li>
+		  <li> <a href="menu.html">Menu</a></li>
+		  <li> <a href="contact us.html">Contact Us</a></li>
+	   </ol>
+	   <div  class="rightnav">
+	       <input type="text" name="search" id="search" onfocus="focusevent()">
+		       <script>
+					function focusevent()
+						{
+							document.getElementById("search").style.background="orange";
+						}
+						
+                </script>
+		   <button class="btn btn-sm">Search</button>
+	   </div>
+	  </nav>
+	  
+	  <section class="background firstSection">
+	     <div class="box-main">
+		    <div class="firsthalf">
+			   <p class="text-big"><b>The future of food restaurant</b></p>
+			   <p class="text-small">We're not getting younger. Today let's fight hunger!</p>
+			   <p class="text-small">please subscribe our restaurant youtube channel and watch videos</p>
+			   <div class="button">
+			      <button class="btn">subscribe</button>
+				  <button class="btn">Watch Videos</button>
+			   </div>
+			</div>
+			<div class="secondhalf">
+			   <video autoplay loop controls src="food.mp4" height="200" width="200"></video>
+			    <iframe src="she audio.mp3" frameborder="0" allow="accelerometer"></iframe>
+			</div>
+		 </div><br>
+	  </section><br><br>
+      <section class="secRight">
+	    <div class="paras">
+	      <p class="sectionTag text-big"><b><i>About Us</b></i></p>
+		  <p class="sectionSubTag text-small">our restaurant also contains lodge for the couples only which is build by mainly focusing on the couples dinners during the festivals</p>
+		</div>
+		<div class="supportimg">
+		     <img src="cooking.jpg" alt="laptop image" class="imgFluid">
+		</div>
+	  </section>
+	  <footer>
+	  <div class="copyright">
+	     <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+		 <a href="https://twitter.com/i/flow/login"><i class="fa fa-twitter"></i></a>
+		 <a href="https://www.instagram.com/accounts/login/"><i class="fa fa-instagram"></i></a>
+		 <a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+		 </div>
+	     <p class="copyright"><u>Copyright &copy; 2021 food palace All right reserved</u></p>
+		 <p class="copyright">Food Palace 2021 Website created by Bhuwan Giri Supported by BIT</p>
+	  </footer>
+</body>
+</html>
